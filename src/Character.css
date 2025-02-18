@@ -1,0 +1,16 @@
+.Character {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.Character h1 {
+  margin-right: auto;
+}
+
+.Character button {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  margin: 0.5rem;
+}

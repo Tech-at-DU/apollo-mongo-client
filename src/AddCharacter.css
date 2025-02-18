@@ -1,0 +1,20 @@
+.AddCharacter {
+  display: flex;
+}
+
+.AddCharacter .initiative {
+  width: 50px;
+}
+
+.AddCharacter input, .AddCharacter button {
+  padding: 0.5rem;
+  border: 1px solid;
+  margin: calc(0.5rem - 1px) 0.125rem;
+}
+
+.AddCharacter button {
+  background-color: black;
+  border: 1px solid;
+  color: white;
+  border: 1px solid black;
+}
