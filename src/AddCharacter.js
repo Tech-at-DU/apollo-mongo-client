@@ -18,7 +18,11 @@ function AddCharacter() {
 
   const [ newCharacter, { loading, error, data } ] = useMutation(NEW_CHARACTER, {
     // Use update cache to refresh components using useQuery after this mutation. 
-    update(cache, { data: { createCharacter } }) {
+    // update(cache, { data: { createCharacter } }) {
+    update(cache, obj) {
+      // two params: cache ref, new/modified data
+      console.log(obj)
+      const {data: { createCharacter } } = obj
       cache.modify({
         fields: {
           characters(existingCharacters = []) {
@@ -68,3 +72,12 @@ function AddCharacter() {
 }
 
 export default AddCharacter
+
+
+
+// const obj = {
+//     update: function () {},
+//     example() {}
+// }
+
+// console.log(obj)

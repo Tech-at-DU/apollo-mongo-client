@@ -4,8 +4,25 @@
   justify-content: flex-end;
 }
 
-.Character h1 {
+.Character .name {
   margin-right: auto;
+}
+
+.Character input.name, .Character input.initiative {
+  border: 1px solid;
+  padding: 0.5rem;
+  margin: calc(0.5rem - 1px) 0;
+  min-width: 0;
+  font-size: 1rem;
+}
+
+.Character input.name {
+  flex: 8 0 auto;
+  margin-right: 1rem
+}
+
+.Character input.initiative {
+  flex: 0 4 auto;
 }
 
 .Character button {
@@ -13,4 +30,5 @@
   color: white;
   border: 1px solid black;
   margin: 0.5rem;
+  flex: 0 0 auto;
 }
